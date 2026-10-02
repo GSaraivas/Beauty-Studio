@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aura Beauty Studio | Salão de Beleza</title>
+  <meta name="description" content="Experiência premium em beleza, cabelos e cuidados personalizados.">
+  <meta name="theme-color" content="#0B0A0A">
+  <meta property="og:title" content="Aura Beauty Studio">
+  <meta property="og:description" content="Sua beleza, elevada a outro nível.">
+  <meta property="og:type" content="website">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230B0A0A'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='%23C9A574' font-family='serif'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="https://unpkg.com/lucide@0.462.0/dist/umd/lucide.min.js" defer></script>
+</head>
+
+<body>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="Aura Beauty Studio"><span>AURA</span><small>BEAUTY STUDIO</small></a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a><a href="#depoimentos">Depoimentos</a><a href="#contato">Contato</a>
+        <a href="#" class="btn btn--primary btn--sm nav__cta" data-whatsapp>Agendar horário</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><i
+          data-lucide="menu"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <!-- SUBSTITUIR PELA FOTO REAL DO SALÃO (chave "hero" em script.js) -->
+      <div class="hero__bg" data-img="hero" role="img" aria-label="Mulher em um salão de beleza sofisticado"></div>
+      <div class="container hero__content">
+        <p class="label anim" style="--d:.2s">Beauty • Care • Experience</p>
+        <h1 class="anim" style="--d:.4s">Sua <em>beleza</em>,<br>elevada a outro <em>nível</em>.</h1>
+        <p class="hero__text anim" style="--d:.6s">Cuidado, sofisticação e beleza em uma experiência criada para você.
+        </p>
+        <div class="hero__btns anim" style="--d:.8s">
+          <a href="#" class="btn btn--primary" data-whatsapp><i data-lucide="message-circle"></i>Agendar pelo
+            WhatsApp</a>
+          <a href="#servicos" class="btn btn--ghost">Conhecer serviços</a>
+        </div>
+        <ul class="hero__stats anim" style="--d:1s">
+          <li><b>01</b>Experiência</li>
+          <li><b>02</b>Cuidado</li>
+          <li><b>03</b>Resultado</li>
+        </ul>
+      </div>
+      <a href="#sobre" class="scroll-ind" aria-label="Rolar para baixo"><span>Scroll to explore</span><i></i></a>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section about" id="sobre">
+      <div class="container about__grid">
+        <div class="about__media reveal-left">
+          <!-- SUBSTITUIR PELA FOTO REAL DO SALÃO -->
+          <div class="about__img" data-img="about" role="img" aria-label="Ambiente do salão"></div>
+          <div class="about__badges">
+            <!-- PLACEHOLDERS: edite os números -->
+            <div><strong>+500</strong><span>Clientes atendidas</span></div>
+            <div><strong>+5</strong><span>Anos de experiência</span></div>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <p class="label">Sobre o studio</p>
+          <h2>Beleza que começa<br>nos <em>detalhes</em>.</h2>
+          <p class="lead">Mais do que transformar cabelos, criamos experiências.</p>
+          <p>Nosso espaço foi pensado para proporcionar um momento de cuidado, confiança e autoestima, com atendimento
+            personalizado e atenção a cada detalhe.</p>
+          <a href="#galeria" class="btn btn--outline">Conheça nosso espaço</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="diff" aria-label="Diferenciais">
+      <div class="container diff__grid">
+        <article class="reveal"><span>01</span>
+          <h3>Atendimento personalizado</h3>
+        </article>
+        <article class="reveal" style="--d:.1s"><span>02</span>
+          <h3>Profissionais especializados</h3>
+        </article>
+        <article class="reveal" style="--d:.2s"><span>03</span>
+          <h3>Produtos de alta qualidade</h3>
+        </article>
+        <article class="reveal" style="--d:.3s"><span>04</span>
+          <h3>Experiência premium</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section services" id="servicos">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="label">Serviços</p>
+          <h2>Nossos serviços</h2>
+          <p>Cuidados pensados para realçar<br>a sua melhor versão.</p>
+        </header>
+        <div class="services__grid">
+          <a href="#" class="card reveal" data-whatsapp><span class="card__n">01</span><i data-lucide="scissors"></i>
+            <h3>Corte &amp; Escova</h3>
+            <p>Cortes personalizados e finalizações pensadas para o seu estilo.</p><i class="card__arrow"
+              data-lucide="arrow-up-right"></i>
+          </a>
+          <a href="#" class="card reveal" style="--d:.08s" data-whatsapp><span class="card__n">02</span><i
+              data-lucide="palette"></i>
+            <h3>Coloração</h3>
+            <p>Técnicas personalizadas para renovar seu visual com naturalidade.</p><i class="card__arrow"
+              data-lucide="arrow-up-right"></i>
+          </a>
+          <a href="#" class="card reveal" style="--d:.16s" data-whatsapp><span class="card__n">03</span><i
+              data-lucide="sparkles"></i>
+            <h3>Mechas</h3>
+            <p>Iluminação, dimensão e sofisticação para transformar seu cabelo.</p><i class="card__arrow"
+              data-lucide="arrow-up-right"></i>
+          </a>
+          <a href="#" class="card reveal" data-whatsapp><span class="card__n">04</span><i data-lucide="droplets"></i>
+            <h3>Tratamentos</h3>
+            <p>Cuidados profundos para devolver força, brilho e vitalidade.</p><i class="card__arrow"
+              data-lucide="arrow-up-right"></i>
+          </a>
+          <a href="#" class="card reveal" style="--d:.08s" data-whatsapp><span class="card__n">05</span><i
+              data-lucide="heart"></i>
+            <h3>Manicure &amp; Pedicure</h3>
+            <p>Cuidado completo para suas mãos e pés.</p><i class="card__arrow" data-lucide="arrow-up-right"></i>
+          </a>
+          <a href="#" class="card reveal" style="--d:.16s" data-whatsapp><span class="card__n">06</span><i
+              data-lucide="eye"></i>
+            <h3>Sobrancelhas</h3>
+            <p>Design personalizado para valorizar a harmonia do seu rosto.</p><i class="card__arrow"
+              data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+      <div class="container cta-band__inner reveal">
+        <div>
+          <h2>Seu próximo visual começa aqui.</h2>
+          <p>Agende seu horário e descubra uma nova experiência de beleza.</p>
+        </div>
+        <a href="#" class="btn btn--primary" data-whatsapp>Agendar horário</a>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="section gallery" id="galeria">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="label">Galeria</p>
+          <h2>Nosso trabalho</h2>
+          <p>Detalhes que fazem toda diferença.</p>
+        </header>
+        <div class="gallery__grid">
+          <!-- SUBSTITUIR PELAS FOTOS REAIS (chaves g1–g6 em script.js) -->
+          <button class="g g--a reveal-scale" data-img="g1" data-cap="Cortes e finalizações"
+            aria-label="Ampliar: Cortes e finalizações"><span>Cortes e finalizações</span></button>
+          <button class="g g--b reveal-scale" data-img="g2" data-cap="Coloração"
+            aria-label="Ampliar: Coloração"><span>Coloração</span></button>
+          <button class="g g--c reveal-scale" data-img="g3" data-cap="Mechas"
+            aria-label="Ampliar: Mechas"><span>Mechas</span></button>
+          <button class="g g--d reveal-scale" data-img="g4" data-cap="Tratamentos"
+            aria-label="Ampliar: Tratamentos"><span>Tratamentos</span></button>
+          <button class="g g--e reveal-scale" data-img="g5" data-cap="Manicure"
+            aria-label="Ampliar: Manicure"><span>Manicure</span></button>
+          <button class="g g--f reveal-scale" data-img="g6" data-cap="Nosso ambiente"
+            aria-label="Ampliar: Nosso ambiente"><span>Nosso ambiente</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section testi" id="depoimentos">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="label">Depoimentos</p>
+          <h2>O que nossas clientes dizem</h2>
+        </header>
+        <!-- DEPOIMENTOS FICTÍCIOS: substitua por avaliações reais -->
+        <div class="testi__track" id="testiTrack">
+          <figure class="t">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <blockquote>“Experiência maravilhosa! Fui muito bem atendida e amei o resultado.”</blockquote>
+            <figcaption>— Mariana S.</figcaption>
+          </figure>
+          <figure class="t">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <blockquote>“Ambiente lindo e profissionais atenciosas. Meu cabelo nunca esteve tão bonito.”</blockquote>
+            <figcaption>— Camila R.</figcaption>
+          </figure>
+          <figure class="t">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <blockquote>“Cada detalhe é cuidado com carinho. Já agendei meu próximo horário.”</blockquote>
+            <figcaption>— Fernanda L.</figcaption>
+          </figure>
+        </div>
+        <div class="testi__nav">
+          <button id="tPrev" aria-label="Depoimento anterior"><i data-lucide="chevron-left"></i></button>
+          <div class="dots" id="tDots"></div>
+          <button id="tNext" aria-label="Próximo depoimento"><i data-lucide="chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section class="section insta">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="label">Siga nosso trabalho</p>
+          <h2>@aurabeautystudio</h2>
+          <p>Acompanhe nossos trabalhos, transformações e novidades.</p>
+        </header>
+        <div class="insta__grid">
+          <a href="https://instagram.com/" target="_blank" rel="noopener" class="ig" data-img="g1"
+            aria-label="Ver no Instagram"><i data-lucide="instagram"></i></a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener" class="ig" data-img="g2"
+            aria-label="Ver no Instagram"><i data-lucide="instagram"></i></a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener" class="ig" data-img="g3"
+            aria-label="Ver no Instagram"><i data-lucide="instagram"></i></a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener" class="ig" data-img="g4"
+            aria-label="Ver no Instagram"><i data-lucide="instagram"></i></a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener" class="ig" data-img="g5"
+            aria-label="Ver no Instagram"><i data-lucide="instagram"></i></a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener" class="ig" data-img="g6"
+            aria-label="Ver no Instagram"><i data-lucide="instagram"></i></a>
+        </div>
+        <p class="center"><a href="https://instagram.com/" target="_blank" rel="noopener" class="btn btn--outline">Ver
+            no Instagram</a></p>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="final" id="contato">
+      <div class="final__bg" data-img="cta" role="presentation"></div>
+      <div class="container final__inner reveal">
+        <p class="label">Pronta para transformar seu visual?</p>
+        <h2>Seu próximo momento de beleza<br>começa com um simples <em>agendamento</em>.</h2>
+        <a href="#" class="btn btn--primary" data-whatsapp><i data-lucide="message-circle"></i>Agendar pelo WhatsApp</a>
+        <small>Atendimento personalizado • Ambiente exclusivo • Experiência premium</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div><a href="#inicio" class="logo"><span>AURA</span><small>BEAUTY STUDIO</small></a></div>
+      <nav aria-label="Rodapé"><a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a
+          href="#galeria">Galeria</a><a href="#contato">Contato</a></nav>
+      <address>(11) 99999-9999<br>São Paulo — SP<br>Seg–Sex: 09h às 19h<br>Sáb: 09h às 17h</address>
+      <div class="social"><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="#"
+          data-whatsapp>WhatsApp</a></div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year">2026</span> Aura Beauty Studio. Todos os direitos reservados.</span>
+      <span>Desenvolvido por [SEU NOME]</span>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galeria ampliada" hidden>
+    <button class="lb__close" id="lbClose" aria-label="Fechar"><i data-lucide="x"></i></button>
+    <button class="lb__nav lb__prev" id="lbPrev" aria-label="Anterior"><i data-lucide="chevron-left"></i></button>
+    <figure>
+      <div class="lb__img" id="lbImg" role="img"></div>
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+    <button class="lb__nav lb__next" id="lbNext" aria-label="Próxima"><i data-lucide="chevron-right"></i></button>
+  </div>
+
+  <a href="#" class="wa-float" data-whatsapp aria-label="Agendar pelo WhatsApp"><i
+      data-lucide="message-circle"></i><span>Agende seu horário</span></a>
+
+  <script src="./js/script.js" defer></script>
+</body>
+
+</html>
